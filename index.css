@@ -18,3 +18,68 @@ ul {
     background-color: #555;
     color: white;
   }
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the side navigation */
+  .sidenav {
+    height: 100%;
+    width: auto;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    text-align: left;
+    margin-top: 6%;
+    margin-left: 12%;
+  }
+  
+  
+  /* Side navigation links */
+  .sidenav a {
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color on hover */
+  .sidenav a:hover {
+    color: cadetblue;
+  }
+  
+  /* Style the content */
+  .content {
+    padding-left: 25%;
+    margin-bottom: 20%;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 50px;
+    row-gap: 50px;
+    max-width: 60%;
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    align-content: center;
+  }
+  .foot-container {
+    padding-left: 25%;
+    margin-bottom: 20%;
+    text-align: center;
+  }
