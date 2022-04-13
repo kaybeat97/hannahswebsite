@@ -81,7 +81,8 @@ ul {
     .column {
       flex: 100%;
       max-width: 100%;
-      margin-top: 10%;
+      margin-top: 60px;
+      margin-right: 20px;
     }
   }
 :root {
