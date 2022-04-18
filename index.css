@@ -32,8 +32,8 @@ ul {
   .grid-container {
     display: grid;
     grid-template-columns: auto auto;
-    column-gap: 50px;
-    row-gap: 50px;
+    column-gap: 150px;
+    row-gap: 150px;
     max-width: 60%;
     margin-left: 10%;
     margin-top: 10%;
@@ -61,7 +61,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
-    column-gap: 15px;
+    column-gap: 155px;
   }
   
   .column {
