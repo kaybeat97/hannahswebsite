@@ -1,3 +1,28 @@
+.container {
+  position: relative;
+}
+.text-block {
+  position: absolute;
+  min-width: 200px;
+  bottom: 200px;
+  left: 220px;
+  background-color: black;
+  color: white;
+  opacity: 75%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.text-block2 {
+  position: absolute;
+  min-width: 200px;
+  bottom: 500px;
+  left: 230px;
+  background-color: black;
+  color: white;
+  opacity: 75%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -32,30 +57,20 @@ ul {
   .grid-container {
     display: grid;
     grid-template-columns: auto auto;
-    column-gap: 150px;
-    row-gap: 150px;
-    max-width: 60%;
-    margin-left: 10%;
-    margin-top: 10%;
+    row-gap: 15px;
+    margin-top: 5%;
+    max-width: 100%;
   }
   .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-    align-content: center;
+    width: 99%;
+  }
+  .grid-item1 {
+    grid-column: 1 / span 2;
+    margin-left: 10%;
   }
   .flex-container {
     display: flex;
     flex-direction: column;
-  }
-  
-  /* Responsive layout - makes a one column layout instead of a two-column layout */
-  @media (max-width: 800px) {
-    .flex-container {
-      flex-direction: column;
-    }
   }
   .row {
     display: flex;
@@ -83,6 +98,16 @@ ul {
       max-width: 100%;
       margin-top: 60px;
       margin-right: 35%;
+    }
+    .flex-container {
+      flex-direction: column;
+    }
+    .grid-container {
+      grid-template-columns: auto;
+      max-width: fit-content;
+      margin-top: 20%;
+      margin-left: 10%;
+      margin-bottom: 10%;
     }
   }
 :root {
