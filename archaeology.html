@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HannahParris.art</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="index.css">
+</head>
+<body  style="background-color: #c1e1c1;">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-white w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;text-align: end;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px;">Close Menu</a>
+  <div class="w3-container" >
+    <a href="https://www.hannahparris.art"><img src="pictures/Logo.PNG" style="width:100%"></a>
+    <h3 class="w3-padding-64"><b>Hannah Parris</b></h3>
+    <a href="contactme.html">Contact Me</a><br>
+    <a href="#">Archaeology Illustrations</a>
+    <a href="https://www.etsy.com/shop/HannahParrisArt">My Etsy Page!</a><br>
+    <a href="#">Senior Thesis</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding" >
+  <a href="javascript:void(0)" class="w3-button w3-white w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Hannah Parris</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:30%;margin-right:40px;margin-top:5%; background-color: #c1e1c1;">
+    <div class="row"> 
+      <div class="column">
+    <img src="pictures/Mammiform Bowl.jpg" style="width:120%">
+    <img src="pictures/boi8.jpg" style="width:120%">
+    <img src="pictures/boi9.jpg" style="width:120%">
+    </div>  
+    <div class="column">
+    <img src="pictures/Donkey_Bird_Ocarina_.jpg" style="width:120%">
+    <img src="pictures/Toad Bowl.jpg" style="width:120%">
+    <img src="pictures/boi22.jpg" style="width:120%">
+    <img src="pictures/324x_Parris_H_P4.jpeg" style="width:120%">
+  </div>
+</div>
+</div>
+<!-- End page content -->
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
