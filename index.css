@@ -114,6 +114,7 @@ ul {
       max-width: 100%;
       margin-top: 60px;
       margin-right: 35%;
+      margin-left: 1px;
     }
     .flex-container {
       flex-direction: column;
