@@ -16,9 +16,9 @@
     <a href="https://www.hannahparris.art"><img src="pictures/Logo.PNG" style="width:100%"></a>
     <h3 class="w3-padding-64"><b>Hannah Parris</b></h3>
     <a href="contactme.html">Contact Me</a><br>
-    <a href="#">Archaeology illstrations</a>
+    <a href="archaeology.html">Archaeology Illustrations</a>
     <a href="https://www.etsy.com/shop/HannahParrisArt">My Etsy Page!</a><br>
-    <a href="#">Senior Thesis</a>
+    <a href="senr_thes.html">Senior Thesis</a>
   </div>
 </nav>
 
@@ -30,7 +30,8 @@
 
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<!-- End of Nav -->
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:30%;margin-right:40px;margin-top:5%; background-color: #c1e1c1;">
   <div class="row"> 
@@ -100,6 +101,25 @@ function onClick(element) {
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
+}
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 </script>
 

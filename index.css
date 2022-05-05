@@ -115,7 +115,25 @@ ul {
     margin-left: 10px;
     vertical-align: middle;
   }
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(25, 50, 31);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
   
+  #myBtn:hover {
+    background-color: #555;
+  }
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media (max-width: 600px) {
     .column {
@@ -123,7 +141,7 @@ ul {
       max-width: 100%;
       margin-top: 60px;
       margin-right: 35%;
-      margin-left: 1px;
+      margin-left: 13px;
     }
     .flex-container {
       flex-direction: column;
@@ -133,17 +151,16 @@ ul {
       margin-right: 5%;
     }
     .card {
-      margin-left: 2%;
-      margin-right: 2%;
-      margin-top: 50%;
+      margin-left: 20%;
+      margin-top: 10%;
     }
   }@media (max-width: 1000px) {
     .column {
       flex: 100%;
       max-width: 100%;
       margin-top: 60px;
-      margin-right: 22%;
-      margin-left: 1px;
+      margin-right: 35%;
+      margin-left: 13px;
     }
     .flex-container {
       flex-direction: column;
@@ -159,7 +176,7 @@ ul {
     .card {
       margin-left: 2%;
       margin-right: 2%;
-      margin-top: 25%;
+      margin-top: 15%;
     }
   }
 :root {
