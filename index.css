@@ -94,7 +94,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
-    column-gap: 155px;
+    column-gap: 15%;
   }
   .card {
     margin-top: 10%; 
@@ -108,9 +108,20 @@ ul {
     flex: 25%;
     max-width: 25%;
     padding: 0 5px;
+
+  }
+  .columna {
+    flex: 25%;
+    max-width: 35%;
   }
   
   .column img {
+    margin-top: 20px;
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+    
+  .columna img {
     margin-top: 20px;
     margin-left: 10px;
     vertical-align: middle;
@@ -140,8 +151,16 @@ ul {
       flex: 100%;
       max-width: 100%;
       margin-top: 60px;
-      margin-right: 35%;
+      margin-right: 37%;
       margin-left: 13px;
+    }
+    .columna {
+      flex: 100%;
+      max-width: 100%;
+      margin-top: 60px;
+      margin-right: 10%;
+      margin-left: 15%;
+      row-gap: 10px;
     }
     .flex-container {
       flex-direction: column;
@@ -159,8 +178,16 @@ ul {
       flex: 100%;
       max-width: 100%;
       margin-top: 60px;
-      margin-right: 35%;
+      margin-right: 37%;
       margin-left: 13px;
+    }
+    .columna {
+      flex: 100%;
+      max-width: 100%;
+      margin-top: 60px;
+      margin-right: 10%;
+      margin-left: 15%;
+      row-gap: 10px;
     }
     .flex-container {
       flex-direction: column;
